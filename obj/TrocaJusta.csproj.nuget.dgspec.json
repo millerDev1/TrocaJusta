@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mille\\OneDrive\\Área de Trabalho\\TrocaJusta\\TrocaJusta\\TrocaJusta.csproj": {}
+    "C:\\Users\\Aluno\\Documents\\TrocaJusta\\TrocaJusta\\TrocaJusta.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mille\\OneDrive\\Área de Trabalho\\TrocaJusta\\TrocaJusta\\TrocaJusta.csproj": {
+    "C:\\Users\\Aluno\\Documents\\TrocaJusta\\TrocaJusta\\TrocaJusta.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mille\\OneDrive\\Área de Trabalho\\TrocaJusta\\TrocaJusta\\TrocaJusta.csproj",
+        "projectUniqueName": "C:\\Users\\Aluno\\Documents\\TrocaJusta\\TrocaJusta\\TrocaJusta.csproj",
         "projectName": "TrocaJusta",
-        "projectPath": "C:\\Users\\mille\\OneDrive\\Área de Trabalho\\TrocaJusta\\TrocaJusta\\TrocaJusta.csproj",
-        "packagesPath": "C:\\Users\\mille\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mille\\OneDrive\\Área de Trabalho\\TrocaJusta\\TrocaJusta\\obj\\",
+        "projectPath": "C:\\Users\\Aluno\\Documents\\TrocaJusta\\TrocaJusta\\TrocaJusta.csproj",
+        "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aluno\\Documents\\TrocaJusta\\TrocaJusta\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\mille\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

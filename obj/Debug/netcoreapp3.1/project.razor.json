@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "FilePath": "c:\\Users\\mille\\OneDrive\\Área de Trabalho\\TrocaJusta\\TrocaJusta\\TrocaJusta.csproj",
+=======
+  "FilePath": "c:\\Users\\Aluno\\Documents\\TrocaJusta\\TrocaJusta\\TrocaJusta.csproj",
+>>>>>>> a0fe8a6a8e84f9111556a5ebeb7e66b3389cdf9f
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14397,11 +14401,16 @@
         }
       }
     ],
+<<<<<<< HEAD
     "CSharpLanguageVersion": 800
+=======
+    "CSharpLanguageVersion": 1000
+>>>>>>> a0fe8a6a8e84f9111556a5ebeb7e66b3389cdf9f
   },
   "RootNamespace": "TrocaJusta",
   "Documents": [
     {
+<<<<<<< HEAD
       "FilePath": "c:\\Users\\mille\\OneDrive\\Área de Trabalho\\TrocaJusta\\TrocaJusta\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -14428,13 +14437,47 @@
     },
     {
       "FilePath": "c:\\Users\\mille\\OneDrive\\Área de Trabalho\\TrocaJusta\\TrocaJusta\\Views\\Shared\\Error.cshtml",
+=======
+      "FilePath": "c:\\Users\\Aluno\\Documents\\TrocaJusta\\TrocaJusta\\Views\\Shared\\Error.cshtml",
+>>>>>>> a0fe8a6a8e84f9111556a5ebeb7e66b3389cdf9f
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
+<<<<<<< HEAD
       "FilePath": "c:\\Users\\mille\\OneDrive\\Área de Trabalho\\TrocaJusta\\TrocaJusta\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
+=======
+      "FilePath": "c:\\Users\\Aluno\\Documents\\TrocaJusta\\TrocaJusta\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Aluno\\Documents\\TrocaJusta\\TrocaJusta\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Aluno\\Documents\\TrocaJusta\\TrocaJusta\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Aluno\\Documents\\TrocaJusta\\TrocaJusta\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Aluno\\Documents\\TrocaJusta\\TrocaJusta\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Aluno\\Documents\\TrocaJusta\\TrocaJusta\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+>>>>>>> a0fe8a6a8e84f9111556a5ebeb7e66b3389cdf9f
     }
   ],
   "SerializationFormat": "0.2"
