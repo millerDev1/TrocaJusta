@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
 
 namespace TrocaJusta
 {
@@ -24,6 +25,16 @@ namespace TrocaJusta
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            var connection = Configuration["ConexaoMySql:MySqlConnectionString"];
+            services.AddDbContext<TrocaJustaContext>(options =>
+            options.UseMySql(connection)
+);
+            // Add framework services.
+            services.AddMvc();
+
+            services.AddDbContext<TrocaJustaContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("TrocaJustaContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

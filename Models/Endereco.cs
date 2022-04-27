@@ -1,6 +1,6 @@
 namespace TrocaJusta.Models
 {
-    public class Enderecos
+    public class Endereco
     {
         public int EnderecoId {get;set;}
         public string Cep {get;set;}

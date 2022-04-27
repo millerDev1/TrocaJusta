@@ -1,6 +1,6 @@
 namespace TrocaJusta.Models
 {
-    public class Profissoes
+    public class Profissao
     {
         public int ProfissaoId { get; set; }
 

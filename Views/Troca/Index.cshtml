@@ -1,0 +1,47 @@
+@model IEnumerable<TrocaJusta.Models.Troca>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UsuarioId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProfissaoId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EnderecoId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UsuarioId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProfissaoId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EnderecoId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Trocaid">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Trocaid">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Trocaid">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
