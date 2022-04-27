@@ -1,9 +1,11 @@
 namespace TrocaJusta.Models
 {
-    public class Troca
+    public class Trocas
     {
-        public int TrocaId {get;set;}
-        public string profissao {get;set;}
+        public int UsuarioId {get;set;}
+        public int ProfissaoId {get;set;}
+
+        public int EnderecoId {get;set;}
      
     }
 }
