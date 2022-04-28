@@ -8415,23 +8415,23 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.5",
       "Microsoft.VisualStudio.Web.CodeGenerators.Mvc >= 3.1.5",
       "Pomelo.EntityFrameworkCore.MySql.Design >= 1.1.2",
-      "Pomelo.EntityFrameworkCore.Mysql >= 3.1.5"
+      "Pomelo.EntityFrameworkCore.Mysql >= 3.2.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mille\\.nuget\\packages\\": {}
+    "C:\\Users\\souza\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mille\\OneDrive\\Área de Trabalho\\TrocaJusta\\TrocaJusta\\TrocaJusta.csproj",
+      "projectUniqueName": "C:\\Users\\souza\\OneDrive\\Área de Trabalho\\Projeto\\TrocaJusta\\TrocaJusta.csproj",
       "projectName": "TrocaJusta",
-      "projectPath": "C:\\Users\\mille\\OneDrive\\Área de Trabalho\\TrocaJusta\\TrocaJusta\\TrocaJusta.csproj",
-      "packagesPath": "C:\\Users\\mille\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mille\\OneDrive\\Área de Trabalho\\TrocaJusta\\TrocaJusta\\obj\\",
+      "projectPath": "C:\\Users\\souza\\OneDrive\\Área de Trabalho\\Projeto\\TrocaJusta\\TrocaJusta.csproj",
+      "packagesPath": "C:\\Users\\souza\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\souza\\OneDrive\\Área de Trabalho\\Projeto\\TrocaJusta\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mille\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\souza\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -8477,7 +8477,7 @@
           },
           "Pomelo.EntityFrameworkCore.Mysql": {
             "target": "Package",
-            "version": "[3.1.5, )"
+            "version": "[3.2.0, )"
           }
         },
         "imports": [
@@ -8501,17 +8501,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.418\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "TrocaJusta depende de Pomelo.EntityFrameworkCore.MySql (>= 3.1.5), mas Pomelo.EntityFrameworkCore.MySql 3.1.5 não foi encontrado. A melhor correspondência aproximada de Pomelo.EntityFrameworkCore.MySql 3.2.0 foi resolvida.",
-      "libraryId": "Pomelo.EntityFrameworkCore.MySql",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  }
 }
