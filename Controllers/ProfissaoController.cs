@@ -21,7 +21,8 @@ namespace TrocaJusta.Controllers
         // GET: Profissao
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Profissao.ToListAsync());
+            var trocaJustaContext = _context.Profissao.Include(p => p.Usuario);
+            return View(await trocaJustaContext.ToListAsync());
         }
 
         // GET: Profissao/Details/5
@@ -33,6 +34,7 @@ namespace TrocaJusta.Controllers
             }
 
             var profissao = await _context.Profissao
+                .Include(p => p.Usuario)
                 .FirstOrDefaultAsync(m => m.ProfissaoId == id);
             if (profissao == null)
             {
@@ -45,6 +47,7 @@ namespace TrocaJusta.Controllers
         // GET: Profissao/Create
         public IActionResult Create()
         {
+            ViewData["UsuarioId"] = new SelectList(_context.Usuario, "UsuarioId", "UsuarioId");
             return View();
         }
 
@@ -53,7 +56,7 @@ namespace TrocaJusta.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProfissaoId,NomeProfissao")] Profissao profissao)
+        public async Task<IActionResult> Create([Bind("ProfissaoId,NomeProfissao,UsuarioId")] Profissao profissao)
         {
             if (ModelState.IsValid)
             {
@@ -61,6 +64,7 @@ namespace TrocaJusta.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["UsuarioId"] = new SelectList(_context.Usuario, "UsuarioId", "UsuarioId", profissao.UsuarioId);
             return View(profissao);
         }
 
@@ -77,6 +81,7 @@ namespace TrocaJusta.Controllers
             {
                 return NotFound();
             }
+            ViewData["UsuarioId"] = new SelectList(_context.Usuario, "UsuarioId", "UsuarioId", profissao.UsuarioId);
             return View(profissao);
         }
 
@@ -85,7 +90,7 @@ namespace TrocaJusta.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ProfissaoId,NomeProfissao")] Profissao profissao)
+        public async Task<IActionResult> Edit(int id, [Bind("ProfissaoId,NomeProfissao,UsuarioId")] Profissao profissao)
         {
             if (id != profissao.ProfissaoId)
             {
@@ -112,6 +117,7 @@ namespace TrocaJusta.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["UsuarioId"] = new SelectList(_context.Usuario, "UsuarioId", "UsuarioId", profissao.UsuarioId);
             return View(profissao);
         }
 
@@ -124,6 +130,7 @@ namespace TrocaJusta.Controllers
             }
 
             var profissao = await _context.Profissao
+                .Include(p => p.Usuario)
                 .FirstOrDefaultAsync(m => m.ProfissaoId == id);
             if (profissao == null)
             {

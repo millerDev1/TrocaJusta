@@ -80,7 +80,9 @@ body {
 
   float: left;
   font-family: Arial;
-  color: black;
+  color:black;
+  text-align: center;
+  margin-left: 23%;
   
 }
 
@@ -109,3 +111,4 @@ body {
   margin-left: 1px;
   
 }
+

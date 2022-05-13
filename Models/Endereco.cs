@@ -1,7 +1,11 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace TrocaJusta.Models
 {
     public class Endereco
     {
+        
         public int EnderecoId {get;set;}
         public string Cep {get;set;}
         public string Estado {get;set;}
@@ -10,5 +14,7 @@ namespace TrocaJusta.Models
         public string Logradouro {get;set;}
         public string Complemento {get;set;}
         public int NumeroCasa {get;set;}
+
+        
 }
 }

@@ -25,7 +25,6 @@ namespace TrocaJusta
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-
             var connection = Configuration["ConexaoMySql:MySqlConnectionString"];
             services.AddDbContext<TrocaJustaContext>(options =>
             options.UseMySql(connection)
