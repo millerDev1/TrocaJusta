@@ -53,7 +53,7 @@ namespace TrocaJusta.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Trocaid,UsuarioId,ProfissaoId,EnderecoId")] Troca troca)
+        public async Task<IActionResult> Create([Bind("Trocaid,UsuarioId1,UsuarioId2,ServicoId1,ServicoId2,EnderecoId1,EnderecoId2")] Troca troca)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace TrocaJusta.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Trocaid,UsuarioId,ProfissaoId,EnderecoId")] Troca troca)
+        public async Task<IActionResult> Edit(int id, [Bind("Trocaid,UsuarioId1,UsuarioId2,ServicoId1,ServicoId2,EnderecoId1,EnderecoId2")] Troca troca)
         {
             if (id != troca.Trocaid)
             {

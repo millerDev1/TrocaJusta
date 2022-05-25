@@ -18,10 +18,13 @@
                 <span asp-validation-for="Nome" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
+                <label asp-for="GeneroId" class="control-label"></label>
+                <select asp-for="GeneroId" class ="form-control" asp-items="ViewBag.GeneroId">
+                     <option >Masculino</option>
+                    <option >Feminino</option>
+                    <option >Prefiro não falar</option>
+                    <option >Outros</option>
+                    </select>            </div>
             <div class="form-group">
                 <label asp-for="Cpf" class="control-label"></label>
                 <input asp-for="Cpf" class="form-control" />
@@ -33,9 +36,30 @@
                 <span asp-validation-for="DataNascimento" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="Telefone" class="control-label"></label>
+                <input asp-for="Telefone" class="form-control" />
+                <span asp-validation-for="Telefone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="ProfissaoId" class="control-label"></label>
-                <input asp-for="ProfissaoId" class="form-control" />
-                <span asp-validation-for="ProfissaoId" class="text-danger"></span>
+                <select asp-for="ProfissaoId" class ="form-control" asp-items="ViewBag.ProfissaoId">
+                <option >Eletrícista</option>
+                </select>            
+                </div>
+            <div class="form-group">
+                <label asp-for="LoginId" class="control-label"></label>
+                <input asp-for="LoginId" class="form-control" />
+                <span asp-validation-for="LoginId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ServicoId" class="control-label"></label>
+                <input asp-for="ServicoId" class="form-control" />
+                <span asp-validation-for="ServicoId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Senha" class="control-label"></label>

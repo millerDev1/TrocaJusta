@@ -1,3 +1,5 @@
+using System;
+
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace TrocaJusta.Models
@@ -6,10 +8,13 @@ namespace TrocaJusta.Models
     {
           
         public int Trocaid { get; set; }
-        public int UsuarioId {get;set;}
-        public int ProfissaoId {get;set;}
-        public int EnderecoId {get;set;}
+        public int UsuarioId1 {get;set;}
         public int UsuarioId2 {get;set;}
-        public int ProfissaoId2 {get;set;}
+        public int ServicoId1 {get;set;}
+        public int ServicoId2 {get;set;}
+        public int EnderecoId1 {get;set;}
+        public int EnderecoId2 {get;set;}
+        
+        
     }
 }

@@ -21,4 +21,10 @@ using TrocaJusta.Models;
         public DbSet<TrocaJusta.Models.Usuario> Usuario { get; set; }
 
         public DbSet<TrocaJusta.Models.Troca> Troca { get; set; }
+
+        public DbSet<TrocaJusta.Models.Servico> Servico { get; set; }
+
+        public DbSet<TrocaJusta.Models.Genero> Genero { get; set; }
+
+        public DbSet<TrocaJusta.Models.Login> Login { get; set; }
     }

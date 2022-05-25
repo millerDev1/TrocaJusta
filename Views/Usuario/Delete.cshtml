@@ -18,11 +18,11 @@
             @Html.DisplayFor(model => model.Nome)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
+            @Html.DisplayNameFor(model => model.Genero)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Email)
-        </dd>
+            @Html.DisplayFor(model => model.Genero.GeneroId)
+        </dd class>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Cpf)
         </dt>
@@ -36,10 +36,34 @@
             @Html.DisplayFor(model => model.DataNascimento)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ProfissaoId)
+            @Html.DisplayNameFor(model => model.Telefone)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ProfissaoId)
+            @Html.DisplayFor(model => model.Telefone)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.profissao)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.profissao.ProfissaoId)
+        </dd class>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LoginId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LoginId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ServicoId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ServicoId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Email)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Senha)

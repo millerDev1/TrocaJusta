@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-
+using System.Collections.Generic;
 namespace TrocaJusta.Models
 
 {
@@ -11,9 +11,7 @@ namespace TrocaJusta.Models
 
         public string NomeProfissao { get; set; }
 
-        public int UsuarioId {get;set;}
-
-        public virtual Usuario Usuario {get;set;}
+        public virtual ICollection <Usuario> Usuarios {get;set;}
 
         
     }
