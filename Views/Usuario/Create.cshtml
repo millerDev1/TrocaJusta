@@ -58,8 +58,17 @@
             </div>
             <div class="form-group">
                 <label asp-for="Genero" class="control-label">Gênero</label>
-                <input asp-for="Genero" class="form-control" />
+
                 <span asp-validation-for="Genero" class="text-danger"></span>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option> </option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                    <option>Prefiro não falar</option>
+                    <option>outros</option>
+
+
+                </select>
             </div>
             <div class="form-group">
                 <input type="submit" value="Criar" class="btn btn-primary" />
@@ -69,6 +78,5 @@
 </div>
 
 <div>
-    <a asp-action="Index">Página Anterior</a>
+    <a asp-action="Index" asp-controller="Home">Página Anterior ></a>
 </div>
-
