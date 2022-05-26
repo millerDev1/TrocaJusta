@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace TrocaJusta.Migrations
 {
     [DbContext(typeof(TrocaJustaContext))]
-    [Migration("20220513145937_InitialCreate")]
+    [Migration("20220526115336_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,21 +24,27 @@ namespace TrocaJusta.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Bairro")
+                        .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("Cep")
+                        .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("Cidade")
+                        .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("Complemento")
+                        .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("Estado")
+                        .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<string>("Logradouro")
+                    b.Property<string>("NomeRua")
+                        .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<int>("NumeroCasa")
@@ -49,25 +55,6 @@ namespace TrocaJusta.Migrations
                     b.ToTable("Endereco");
                 });
 
-            modelBuilder.Entity("TrocaJusta.Models.Profissao", b =>
-                {
-                    b.Property<int>("ProfissaoId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<string>("NomeProfissao")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<int>("UsuarioId")
-                        .HasColumnType("int");
-
-                    b.HasKey("ProfissaoId");
-
-                    b.HasIndex("UsuarioId");
-
-                    b.ToTable("Profissao");
-                });
-
             modelBuilder.Entity("TrocaJusta.Models.Reclamacao", b =>
                 {
                     b.Property<int>("ReclamacaoId")
@@ -75,14 +62,36 @@ namespace TrocaJusta.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Chat")
+                        .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.HasKey("ReclamacaoId");
 
                     b.ToTable("Reclamacao");
+                });
+
+            modelBuilder.Entity("TrocaJusta.Models.Servico", b =>
+                {
+                    b.Property<int>("ServicoId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Feedback")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("NomeServico")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("data")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.HasKey("ServicoId");
+
+                    b.ToTable("Servico");
                 });
 
             modelBuilder.Entity("TrocaJusta.Models.Troca", b =>
@@ -91,16 +100,19 @@ namespace TrocaJusta.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("EnderecoId")
+                    b.Property<int>("EnderecoId1")
                         .HasColumnType("int");
 
-                    b.Property<int>("ProfissaoId")
+                    b.Property<int>("EnderecoId2")
                         .HasColumnType("int");
 
-                    b.Property<int>("ProfissaoId2")
+                    b.Property<int>("ServicoId1")
                         .HasColumnType("int");
 
-                    b.Property<int>("UsuarioId")
+                    b.Property<int>("ServicoId2")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UsuarioId1")
                         .HasColumnType("int");
 
                     b.Property<int>("UsuarioId2")
@@ -117,39 +129,47 @@ namespace TrocaJusta.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
+                    b.Property<int>("Cep")
+                        .HasColumnType("int");
+
                     b.Property<string>("Cpf")
+                        .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("DataNascimento")
+                        .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<int>("EnderecoId")
-                        .HasColumnType("int");
+                    b.Property<string>("Genero")
+                        .IsRequired()
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("Nome")
+                        .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<int>("ProfissaoId")
-                        .HasColumnType("int");
+                    b.Property<string>("NomeServico")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Profissao")
+                        .IsRequired()
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("Senha")
+                        .IsRequired()
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Telefone")
+                        .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.HasKey("UsuarioId");
 
                     b.ToTable("Usuario");
-                });
-
-            modelBuilder.Entity("TrocaJusta.Models.Profissao", b =>
-                {
-                    b.HasOne("TrocaJusta.Models.Usuario", "Usuario")
-                        .WithMany("Profissoes")
-                        .HasForeignKey("UsuarioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

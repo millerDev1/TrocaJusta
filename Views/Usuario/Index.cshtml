@@ -16,9 +16,6 @@
                 @Html.DisplayNameFor(model => model.Nome)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Genero)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Cpf)
             </th>
             <th>
@@ -28,13 +25,10 @@
                 @Html.DisplayNameFor(model => model.Telefone)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.profissao)
+                @Html.DisplayNameFor(model => model.Profissao)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.LoginId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ServicoId)
+                @Html.DisplayNameFor(model => model.NomeServico)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Email)
@@ -43,7 +37,10 @@
                 @Html.DisplayNameFor(model => model.Senha)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.EnderecoId)
+                @Html.DisplayNameFor(model => model.Cep)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Genero)
             </th>
             <th></th>
         </tr>
@@ -55,9 +52,6 @@
                 @Html.DisplayFor(modelItem => item.Nome)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Genero.GeneroId)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Cpf)
             </td>
             <td>
@@ -67,13 +61,10 @@
                 @Html.DisplayFor(modelItem => item.Telefone)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.profissao.ProfissaoId)
+                @Html.DisplayFor(modelItem => item.Profissao)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.LoginId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ServicoId)
+                @Html.DisplayFor(modelItem => item.NomeServico)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Email)
@@ -82,7 +73,10 @@
                 @Html.DisplayFor(modelItem => item.Senha)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.EnderecoId)
+                @Html.DisplayFor(modelItem => item.Cep)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Genero)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.UsuarioId">Edit</a> |

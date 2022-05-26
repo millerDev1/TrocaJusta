@@ -17,12 +17,6 @@
             @Html.DisplayFor(model => model.Nome)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Genero)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Genero.GeneroId)
-        </dd>
-        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Cpf)
         </dt>
         <dd class = "col-sm-10">
@@ -41,22 +35,16 @@
             @Html.DisplayFor(model => model.Telefone)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.profissao)
+            @Html.DisplayNameFor(model => model.Profissao)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.profissao.ProfissaoId)
+            @Html.DisplayFor(model => model.Profissao)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.LoginId)
+            @Html.DisplayNameFor(model => model.NomeServico)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.LoginId)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ServicoId)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ServicoId)
+            @Html.DisplayFor(model => model.NomeServico)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Email)
@@ -71,10 +59,16 @@
             @Html.DisplayFor(model => model.Senha)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.EnderecoId)
+            @Html.DisplayNameFor(model => model.Cep)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.EnderecoId)
+            @Html.DisplayFor(model => model.Cep)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Genero)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Genero)
         </dd>
     </dl>
 </div>

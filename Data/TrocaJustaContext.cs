@@ -14,8 +14,6 @@ using TrocaJusta.Models;
 
         public DbSet<TrocaJusta.Models.Endereco> Endereco { get; set; }
 
-        public DbSet<TrocaJusta.Models.Profissao> Profissao { get; set; }
-
         public DbSet<TrocaJusta.Models.Reclamacao> Reclamacao { get; set; }
 
         public DbSet<TrocaJusta.Models.Usuario> Usuario { get; set; }
@@ -24,7 +22,4 @@ using TrocaJusta.Models;
 
         public DbSet<TrocaJusta.Models.Servico> Servico { get; set; }
 
-        public DbSet<TrocaJusta.Models.Genero> Genero { get; set; }
-
-        public DbSet<TrocaJusta.Models.Login> Login { get; set; }
     }

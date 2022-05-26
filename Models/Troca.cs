@@ -6,7 +6,7 @@ namespace TrocaJusta.Models
 {
     public class Troca
     {
-          
+        [Key]  
         public int Trocaid { get; set; }
         public int UsuarioId1 {get;set;}
         public int UsuarioId2 {get;set;}

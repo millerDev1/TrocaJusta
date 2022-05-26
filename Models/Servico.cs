@@ -8,6 +8,7 @@ namespace TrocaJusta.Models
 {
     public class Servico
     {
+        [Key]
         public int ServicoId {get;set;}
 
         public string NomeServico {get;set;}

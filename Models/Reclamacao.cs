@@ -6,11 +6,13 @@ namespace TrocaJusta.Models
 {
     public class Reclamacao
     {
-        
+        [Key]
         public int ReclamacaoId { get; set; }
 
+        [Required(ErrorMessage = "Campo Obrigatório")]
         public string Email { get; set; }
 
+        [Required(ErrorMessage = "Campo Obrigatório")]
         public string Chat { get; set; }
     }
 }
