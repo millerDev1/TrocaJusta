@@ -22,4 +22,6 @@ using TrocaJusta.Models;
 
         public DbSet<TrocaJusta.Models.Servico> Servico { get; set; }
 
+        public DbSet<TrocaJusta.Models.AuxiliarEndereco> AuxiliarEndereco { get; set;}
+
     }

@@ -1,6 +1,7 @@
-  
-using System;
 
+using System;
+using TrocaJusta.Enums;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace TrocaJusta.Models
@@ -11,10 +12,11 @@ namespace TrocaJusta.Models
         [Key]
         public int ServicoId {get;set;}
 
-        public string NomeServico {get;set;}
+        public ServicoEnum NomeServico {get;set;}
 
-        public string data {get;set;}
+        public DateTime DataServico {get;set;}
 
-         public string Feedback {get;set;}
+        public string Feedback {get;set;}
+        
     }
 }

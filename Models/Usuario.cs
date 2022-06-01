@@ -1,4 +1,7 @@
+using TrocaJusta.Enums;
 using System;
+
+
 
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -17,31 +20,32 @@ namespace TrocaJusta.Models
         public string Cpf { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório")]
-        public string DataNascimento { get; set; }
+        public DateTime DataNascimento { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório")]
+        [Phone(ErrorMessage = "O número de telefone informado não é valido")]
         public string Telefone {get; set;}
-
-        [Required(ErrorMessage = "Campo Obrigatório")]  
-        public string Profissao { get; set; }
+ 
+        public ProfissaoEnum Profissao { get; set; }
         
-        [ForeignKey("Servico")]  
-        public string NomeServico{get;set;}
+        public ServicoEnum NomeServico{get;set;}
 
         [Required(ErrorMessage = "Campo Obrigatório")]
+        [EmailAddress(ErrorMessage = "O e-mail informado não é valido")]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório")]
         public string Senha { get; set; }
 
-        [ForeignKey("Endereco")]  
-        public int Cep { get; set; }
+        public GeneroEnum Genero { get ; set; }
 
-        [Required(ErrorMessage = "Campo Obrigatório")]
-        public string Genero{get; set;}
+        [ForeignKey("Usuario")]
+        public int EnderecoId { get; set; }
 
-
-
+        public bool SenhaValida(string senha)
+        {
+            return Senha == senha;
+        }
     }
-
+    
 }

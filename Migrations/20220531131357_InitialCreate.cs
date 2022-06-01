@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace TrocaJusta.Migrations
@@ -7,6 +8,20 @@ namespace TrocaJusta.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "AuxiliarEndereco",
+                columns: table => new
+                {
+                    id = table.Column<int>(nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    UsuarioId = table.Column<int>(nullable: false),
+                    EnderecoId = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AuxiliarEndereco", x => x.id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "Endereco",
                 columns: table => new
@@ -18,7 +33,6 @@ namespace TrocaJusta.Migrations
                     Cidade = table.Column<string>(nullable: false),
                     Bairro = table.Column<string>(nullable: false),
                     NomeRua = table.Column<string>(nullable: false),
-                    Complemento = table.Column<string>(nullable: false),
                     NumeroCasa = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
@@ -46,8 +60,8 @@ namespace TrocaJusta.Migrations
                 {
                     ServicoId = table.Column<int>(nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    NomeServico = table.Column<string>(nullable: true),
-                    data = table.Column<string>(nullable: true),
+                    NomeServico = table.Column<int>(nullable: false),
+                    DataServico = table.Column<DateTime>(nullable: false),
                     Feedback = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
@@ -81,14 +95,14 @@ namespace TrocaJusta.Migrations
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Nome = table.Column<string>(nullable: false),
                     Cpf = table.Column<string>(nullable: false),
-                    DataNascimento = table.Column<string>(nullable: false),
+                    DataNascimento = table.Column<DateTime>(nullable: false),
                     Telefone = table.Column<string>(nullable: false),
-                    Profissao = table.Column<string>(nullable: false),
-                    NomeServico = table.Column<string>(nullable: true),
+                    Profissao = table.Column<int>(nullable: false),
+                    NomeServico = table.Column<int>(nullable: false),
                     Email = table.Column<string>(nullable: false),
                     Senha = table.Column<string>(nullable: false),
-                    Cep = table.Column<int>(nullable: false),
-                    Genero = table.Column<string>(nullable: false)
+                    Genero = table.Column<int>(nullable: false),
+                    EnderecoId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -98,6 +112,9 @@ namespace TrocaJusta.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "AuxiliarEndereco");
+
             migrationBuilder.DropTable(
                 name: "Endereco");
 

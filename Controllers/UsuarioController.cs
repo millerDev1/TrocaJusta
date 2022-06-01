@@ -53,7 +53,7 @@ namespace TrocaJusta.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("UsuarioId,Nome,Cpf,DataNascimento,Telefone,Profissao,NomeServico,Email,Senha,Cep,Genero")] Usuario usuario)
+        public async Task<IActionResult> Create([Bind("UsuarioId,Nome,Cpf,DataNascimento,Telefone,Profissao,NomeServico,Email,Senha,Genero,EnderecoId")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace TrocaJusta.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("UsuarioId,Nome,Cpf,DataNascimento,Telefone,Profissao,NomeServico,Email,Senha,Cep,Genero")] Usuario usuario)
+        public async Task<IActionResult> Edit(int id, [Bind("UsuarioId,Nome,Cpf,DataNascimento,Telefone,Profissao,NomeServico,Email,Senha,Genero,EnderecoId")] Usuario usuario)
         {
             if (id != usuario.UsuarioId)
             {

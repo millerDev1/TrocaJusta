@@ -1,4 +1,5 @@
 using System;
+
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -24,9 +25,6 @@ namespace TrocaJusta.Models
 
         [Required(ErrorMessage = "Campo Obrigatório")]
         public string NomeRua {get;set;}
-
-        [Required(ErrorMessage = "Campo Obrigatório")]
-        public string Complemento {get;set;}
 
         [Required(ErrorMessage = "Campo Obrigatório")]
         public int NumeroCasa {get;set;}
