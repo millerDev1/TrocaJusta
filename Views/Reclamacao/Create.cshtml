@@ -3,7 +3,10 @@
 @{
     ViewData["Title"] = "Reclamação";
 }
-
+@{
+    Layout = "_LayoutDeslogado";
+    
+} 
 <h1>Reclame-Aqui</h1>
 
 
@@ -23,13 +26,12 @@
                 <span asp-validation-for="Chat" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Criar" class="btn btn-primary" />
+                <input type="submit" value="Enviar" class="btn btn-primary" />
+                <input type="submit" asp-action="Index" asp-controller="Principal" value="Voltar" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index" asp-controller="Home">Página anterior></a>
-</div>
+
 

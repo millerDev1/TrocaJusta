@@ -732,3 +732,4 @@ C:\Users\mille\OneDrive\Área de Trabalho\TrocaJusta\TrocaJusta\obj\Debug\netcor
 C:\Users\mille\OneDrive\Área de Trabalho\TrocaJusta\TrocaJusta\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Edit.cshtml.g.cs
 C:\Users\mille\OneDrive\Área de Trabalho\TrocaJusta\TrocaJusta\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Index.cshtml.g.cs
 C:\Users\mille\OneDrive\Área de Trabalho\TrocaJusta\TrocaJusta\obj\Debug\netcoreapp3.1\Razor\Views\cadastro\Index.cshtml.g.cs
+C:\Users\mille\OneDrive\Área de Trabalho\TrocaJusta\TrocaJusta\obj\Debug\netcoreapp3.1\Razor\Views\Principal\Index.cshtml.g.cs

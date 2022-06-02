@@ -1,4 +1,8 @@
 @model TrocaJusta.Models.Usuario
+@{
+    Layout = "_LayoutDeslogado";
+    
+} 
 
 @{
     ViewData["Title"] = "Create";
@@ -64,7 +68,7 @@
             </div>
             <div class="form-group">
                 <input type="submit" value="Cadastre-se" asp-action="Index" asp-controller="cadastro" class="btn btn-primary" />
-                <input type="submit" value="Voltar" asp-action="Index" asp-controller="Home"  class="btn btn-primary" />
+                <input type="submit" value="Voltar" asp-action="Index" asp-controller="Principal"  class="btn btn-primary" />
             </div>
         </form>
     </div>

@@ -104,8 +104,15 @@ body {
   margin-left: 35%;
 
 }
-.nav-item4{
+.nav-item3{
   margin: 1%;
+}
+
+.nav-item5,.nav-item4,.nav-item6 {
+
+  margin: 1%;
+  margin-left: 50px;
+
 }
 
 
@@ -128,5 +135,9 @@ body {
   
 }
 
+.img{
 
+  text-align: center;
+  margin-left: 30%;
+}
 
