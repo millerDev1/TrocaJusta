@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace TrocaJusta.Migrations
 {
     [DbContext(typeof(TrocaJustaContext))]
-    [Migration("20220531131357_InitialCreate")]
+    [Migration("20220601231826_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

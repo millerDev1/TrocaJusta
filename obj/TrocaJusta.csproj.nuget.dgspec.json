@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\souza\\OneDrive\\Área de Trabalho\\Pasta\\TrocaJusta\\TrocaJusta.csproj": {}
+    "C:\\Users\\mille\\OneDrive\\Área de Trabalho\\TrocaJusta\\TrocaJusta\\TrocaJusta.csproj": {}
   },
   "projects": {
-    "C:\\Users\\souza\\OneDrive\\Área de Trabalho\\Pasta\\TrocaJusta\\TrocaJusta.csproj": {
+    "C:\\Users\\mille\\OneDrive\\Área de Trabalho\\TrocaJusta\\TrocaJusta\\TrocaJusta.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\souza\\OneDrive\\Área de Trabalho\\Pasta\\TrocaJusta\\TrocaJusta.csproj",
+        "projectUniqueName": "C:\\Users\\mille\\OneDrive\\Área de Trabalho\\TrocaJusta\\TrocaJusta\\TrocaJusta.csproj",
         "projectName": "TrocaJusta",
-        "projectPath": "C:\\Users\\souza\\OneDrive\\Área de Trabalho\\Pasta\\TrocaJusta\\TrocaJusta.csproj",
-        "packagesPath": "C:\\Users\\souza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\souza\\OneDrive\\Área de Trabalho\\Pasta\\TrocaJusta\\obj\\",
+        "projectPath": "C:\\Users\\mille\\OneDrive\\Área de Trabalho\\TrocaJusta\\TrocaJusta\\TrocaJusta.csproj",
+        "packagesPath": "C:\\Users\\mille\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mille\\OneDrive\\Área de Trabalho\\TrocaJusta\\TrocaJusta\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\souza\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\mille\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
