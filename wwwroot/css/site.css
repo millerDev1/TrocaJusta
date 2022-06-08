@@ -86,34 +86,9 @@ body {
   
 }
 
-.nav-item1 {
 
-  margin: 1%;
-  margin-left: 40px;
 
-}
-.nav-item2 {
 
-  margin: 1%;
-  
-
-}
-.nav-item3 {
-
-  margin: 1%;
-  margin-left: 35%;
-
-}
-.nav-item3{
-  margin: 1%;
-}
-
-.nav-item5,.nav-item4,.nav-item6 {
-
-  margin: 1%;
-  margin-left: 50px;
-
-}
 
 
 .navbar-brand {
@@ -124,12 +99,8 @@ body {
 }
 
 
-.bibibi {
 
-  margin: 1%;
-  margin-left: 1px;
-  
-}
+
 
 .img{
 
@@ -141,3 +112,12 @@ body {
   text-align: center;
 
 }
+.sair{
+  
+ padding-left:70%;
+}
+
+ .cadastre{
+  
+  padding-left:60%;
+ }
