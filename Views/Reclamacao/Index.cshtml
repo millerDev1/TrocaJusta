@@ -1,42 +1,6 @@
-@model IEnumerable<TrocaJusta.Models.Reclamacao>
-
-@{
-    ViewData["Title"] = "Index";
-}
-
-
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Chat)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Chat)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ReclamacaoId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ReclamacaoId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ReclamacaoId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<div class="alert alert-success" >
+  
+  <strong >Reclamação Efetuada Com Sucesso!</strong>
+  <a asp-action="Create" asp-controller="Reclamacao" class="text-dark">Clique-aqui, Para Uma nova Reclamação!, ou</a>
+    <a asp-action="Index" asp-controller="Home" class="text-dark"> Clique-aqui,Voltar</a>
+</div>
