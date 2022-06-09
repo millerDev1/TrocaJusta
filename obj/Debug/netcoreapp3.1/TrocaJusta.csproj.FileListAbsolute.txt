@@ -735,3 +735,4 @@ C:\Users\mille\OneDrive\Área de Trabalho\TrocaJusta\TrocaJusta\obj\Debug\netcor
 C:\Users\mille\OneDrive\Área de Trabalho\TrocaJusta\TrocaJusta\obj\Debug\netcoreapp3.1\Razor\Views\Principal\Index.cshtml.g.cs
 C:\Users\mille\OneDrive\Área de Trabalho\TrocaJusta\TrocaJusta\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutD.cshtml.g.cs
 C:\Users\mille\OneDrive\Área de Trabalho\TrocaJusta\TrocaJusta\obj\Debug\netcoreapp3.1\Razor\Views\Contato\Index.cshtml.g.cs
+C:\Users\mille\OneDrive\Área de Trabalho\TrocaJusta\TrocaJusta\obj\Debug\netcoreapp3.1\Razor\Views\Funciona\Index.cshtml.g.cs
