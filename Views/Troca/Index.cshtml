@@ -4,62 +4,33 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Troca</h1>
+<div class="flex-container">
+<div>
+    <p>Nome:Paulo Santos Silva</p>
+    <p>Profissão:Pintor</p>
+    <p>Serviço:manutenção</p>
+    <p>Telefone:(71)9 8756-7895</p>
+    <p>Email:paulo@hotmail.com</p>
+    <div >
+        <a style="background-color:#519548" type="submit"  class="btn btn-primary"  asp-action="Index" asp-controller="Concluido">Concluido</a>
+        <a style="background-color:red" type="submit"  asp-action="Create" asp-controller="Reclamacao"  class="btn btn-primary">Reclamar</a>
+        </div>
+</div>
+<div>
+  <img  src="img/ttt.jpg"  width="150" height="150">  
+</div>
+<div>
+    <p>Nome:Miller Nascimento souza</p>
+    <p>Profissão:Eletricista</p>
+    <p>Serviço:manutenção</p>
+    <p>Telefone:(71)9 8756-7895</p>
+    <p>Email:Miller@hotmail.com</p>
+    <div>
+                <a style="background-color:#519548" type="submit"  class="btn btn-primary" asp-action="Index" asp-controller="Concluido" >Concluido</a>
+                <a style="background-color:red" type="submit"  asp-action="Create" asp-controller="Reclamacao"  class="btn btn-primary">Reclamar</a>
+            </div>
+</div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.UsuarioId1)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UsuarioId2)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ServicoId1)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ServicoId2)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EnderecoId1)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EnderecoId2)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.UsuarioId1)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UsuarioId2)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ServicoId1)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ServicoId2)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EnderecoId1)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EnderecoId2)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Trocaid">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Trocaid">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Trocaid">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+</div>
+

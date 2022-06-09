@@ -124,3 +124,7 @@ body {
  .funciona{
    text-align: center;
  }
+ .flex-container{
+  display: flex;
+
+ }
