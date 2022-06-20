@@ -20,8 +20,4 @@ using TrocaJusta.Models;
 
         public DbSet<TrocaJusta.Models.Troca> Troca { get; set; }
 
-        public DbSet<TrocaJusta.Models.Servico> Servico { get; set; }
-
-        public DbSet<TrocaJusta.Models.AuxiliarEndereco> AuxiliarEndereco { get; set;}
-
     }

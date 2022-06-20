@@ -4,7 +4,7 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Faça sua Troca!</h1>
+<h1>Selecione o Que Desseja Oferecer</h1>
 
 <h4>Troca</h4>
 <hr />
@@ -13,8 +13,13 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="ServicoId1" class="control-label">Serviço:</label>
-                <select asp-for="ServicoId1" class="form-control">
+                 <div class="form-group">
+                <label asp-for="UsuarioId" class="control-label"></label>
+                <input asp-for="UsuarioId" class="form-control"/>
+                <span asp-validation-for="UsuarioId" class="text-danger"></span>
+            </div>
+                <label asp-for="Servico" class="control-label">Serviço:</label>
+                <select asp-for="Servico" class="form-control">
                     <option value = "0">Selecione</option>
                     <option value = "3">Analise</option>
                     <option value = "2">Consultoria</option>
@@ -23,16 +28,31 @@
                     </select>
             </div>
             <div class="form-group">
-                <label asp-for="ServicoId2" class="control-label">Serviços compativel com sua troca:</label>
-                <select asp-for="ServicoId2" class="form-control">
+                <label asp-for="Profissao" class="control-label">Profissão</label>
+                <select asp-for="Profissao" class="form-control">
                     <option value = "0">Selecione</option>
-                    <option value = "3">Miller-eletrica-manutenção</option>
-                    <option value = "2">joão-pedreiro-manutenção</option>
-                    <option value = "1">paulo-Encanador-manutenção</option>
-                    <option value = "4">william-pintor-manutenção</option>
-                    </select>
+                    <option value = "6">Administração</option>
+                    <option value = "3">Análise e Desenvolvimento de Sistemas</option>
+                    <option value = "20">Análise de Sistemas</option>
+                    <option value = "17">Assistente de Vendas</option>
+                    <option value = "12">Carpinteiro</option>
+                    <option value = "4">Ciência da Computação</option>
+                    <option value = "18">Contador</option>
+                    <option value = "8">Design</option>
+                    <option value = "9">Design Gráfico</option>
+                    <option value = "7">Economia</option>
+                    <option value = "1">Educação Fisica</option>
+                    <option value = "13">Eletricista</option>
+                    <option value = "14">Encanador</option>
+                    <option value = "11">Engenheiro</option>
+                    <option value = "16">Faxineiro</option>
+                    <option value = "2">Nutrição</option>
+                    <option value = "10">Pedreiro</option>
+                    <option value = "15">Pintor</option>
+                    <option value = "19">Programador</option>
+                    <option value = "5">Sistemas da Informação</option>
+                </select>
             </div>
-            
             <div class="form-group">
                 <input style="background-color:#519548" type="submit" value="Trocar" class="btn btn-primary" />
                 <input type="submit" value="Voltar" asp-action="Index" asp-controller="Home"  class="btn btn-primary" />

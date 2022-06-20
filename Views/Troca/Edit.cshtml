@@ -14,34 +14,14 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Trocaid" />
             <div class="form-group">
-                <label asp-for="UsuarioId1" class="control-label"></label>
-                <input asp-for="UsuarioId1" class="form-control" />
-                <span asp-validation-for="UsuarioId1" class="text-danger"></span>
+                <label asp-for="UsuarioId" class="control-label"></label>
+                <input asp-for="UsuarioId" class="form-control" readonly/>
+                <span asp-validation-for="UsuarioId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="UsuarioId2" class="control-label"></label>
-                <input asp-for="UsuarioId2" class="form-control" />
-                <span asp-validation-for="UsuarioId2" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ServicoId1" class="control-label"></label>
-                <input asp-for="ServicoId1" class="form-control" />
-                <span asp-validation-for="ServicoId1" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ServicoId2" class="control-label"></label>
-                <input asp-for="ServicoId2" class="form-control" />
-                <span asp-validation-for="ServicoId2" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="EnderecoId1" class="control-label"></label>
-                <input asp-for="EnderecoId1" class="form-control" />
-                <span asp-validation-for="EnderecoId1" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="EnderecoId2" class="control-label"></label>
-                <input asp-for="EnderecoId2" class="form-control" />
-                <span asp-validation-for="EnderecoId2" class="text-danger"></span>
+                <label asp-for="Servico" class="control-label"></label>
+                <input asp-for="Servico" class="form-control" />
+                <span asp-validation-for="Servico" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
@@ -53,4 +33,3 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
-

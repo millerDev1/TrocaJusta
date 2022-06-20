@@ -1,8 +1,5 @@
-using TrocaJusta.Enums;
 using System;
-
-
-
+using TrocaJusta.Enums;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 

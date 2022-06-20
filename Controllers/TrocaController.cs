@@ -45,6 +45,9 @@ namespace TrocaJusta.Controllers
         // GET: Troca/Create
         public IActionResult Create()
         {
+            ViewData["UsuarioId"] = new SelectList(_context.Usuario, "UsuaurioId", "Nome");
+            ViewData["ProfissaoEnum"] = new SelectList(_context.Usuario, "ProfissaoEnum", "Profissao");
+            ViewData["ServicoEnum"] = new SelectList(_context.Usuario, "ServicoEnum", "Servico");
             return View();
         }
 
@@ -53,13 +56,17 @@ namespace TrocaJusta.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Trocaid,UsuarioId1,UsuarioId2,ServicoId1,ServicoId2,EnderecoId1,EnderecoId2")] Troca troca)
+        public async Task<IActionResult> Create([Bind("TrocaId,UsuarioId,Servico,Profissao,Disponivel")] Troca troca)
         {
             if (ModelState.IsValid)
             {
+                troca.Disponivel = true;
                 _context.Add(troca);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
+                ViewData["UsuarioId"] = new SelectList(_context.Usuario, "UsuaurioId", "Nome");
+                ViewData["ProfissaoEnum"] = new SelectList(_context.Usuario, "ProfissaoEnum", "Profissao");
+                ViewData["ServicoEnum"] = new SelectList(_context.Usuario, "ServicoEnum", "Servico");
             }
             return View(troca);
         }
@@ -85,7 +92,7 @@ namespace TrocaJusta.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Trocaid,UsuarioId1,UsuarioId2,ServicoId1,ServicoId2,EnderecoId1,EnderecoId2")] Troca troca)
+        public async Task<IActionResult> Edit(int id, [Bind("TrocaId,UsuarioId,Servico,Profissao,Disponivel")] Troca troca)
         {
             if (id != troca.Trocaid)
             {
