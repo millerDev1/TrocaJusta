@@ -9,20 +9,6 @@ namespace TrocaJusta.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "AuxiliarEndereco",
-                columns: table => new
-                {
-                    id = table.Column<int>(nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    UsuarioId = table.Column<int>(nullable: false),
-                    EnderecoId = table.Column<int>(nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_AuxiliarEndereco", x => x.id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Endereco",
                 columns: table => new
                 {
@@ -55,32 +41,15 @@ namespace TrocaJusta.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Servico",
-                columns: table => new
-                {
-                    ServicoId = table.Column<int>(nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    NomeServico = table.Column<int>(nullable: false),
-                    DataServico = table.Column<DateTime>(nullable: false),
-                    Feedback = table.Column<string>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Servico", x => x.ServicoId);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Troca",
                 columns: table => new
                 {
                     Trocaid = table.Column<int>(nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    UsuarioId1 = table.Column<int>(nullable: false),
-                    UsuarioId2 = table.Column<int>(nullable: false),
-                    ServicoId1 = table.Column<int>(nullable: false),
-                    ServicoId2 = table.Column<int>(nullable: false),
-                    EnderecoId1 = table.Column<int>(nullable: false),
-                    EnderecoId2 = table.Column<int>(nullable: false)
+                    UsuarioId = table.Column<int>(nullable: false),
+                    Profissao = table.Column<int>(nullable: false),
+                    Servico = table.Column<int>(nullable: false),
+                    Disponivel = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -113,16 +82,10 @@ namespace TrocaJusta.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "AuxiliarEndereco");
-
-            migrationBuilder.DropTable(
                 name: "Endereco");
 
             migrationBuilder.DropTable(
                 name: "Reclamacao");
-
-            migrationBuilder.DropTable(
-                name: "Servico");
 
             migrationBuilder.DropTable(
                 name: "Troca");

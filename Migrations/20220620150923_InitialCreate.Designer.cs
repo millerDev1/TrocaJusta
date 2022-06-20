@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace TrocaJusta.Migrations
 {
     [DbContext(typeof(TrocaJustaContext))]
-    [Migration("20220601231826_InitialCreate")]
+    [Migration("20220620150923_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -17,23 +17,6 @@ namespace TrocaJusta.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "3.1.8")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
-
-            modelBuilder.Entity("TrocaJusta.Models.AuxiliarEndereco", b =>
-                {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<int>("EnderecoId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UsuarioId")
-                        .HasColumnType("int");
-
-                    b.HasKey("id");
-
-                    b.ToTable("AuxiliarEndereco");
-                });
 
             modelBuilder.Entity("TrocaJusta.Models.Endereco", b =>
                 {
@@ -88,48 +71,22 @@ namespace TrocaJusta.Migrations
                     b.ToTable("Reclamacao");
                 });
 
-            modelBuilder.Entity("TrocaJusta.Models.Servico", b =>
-                {
-                    b.Property<int>("ServicoId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("DataServico")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("Feedback")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<int>("NomeServico")
-                        .HasColumnType("int");
-
-                    b.HasKey("ServicoId");
-
-                    b.ToTable("Servico");
-                });
-
             modelBuilder.Entity("TrocaJusta.Models.Troca", b =>
                 {
                     b.Property<int>("Trocaid")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("EnderecoId1")
+                    b.Property<bool>("Disponivel")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<int>("Profissao")
                         .HasColumnType("int");
 
-                    b.Property<int>("EnderecoId2")
+                    b.Property<int>("Servico")
                         .HasColumnType("int");
 
-                    b.Property<int>("ServicoId1")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ServicoId2")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UsuarioId1")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UsuarioId2")
+                    b.Property<int>("UsuarioId")
                         .HasColumnType("int");
 
                     b.HasKey("Trocaid");
