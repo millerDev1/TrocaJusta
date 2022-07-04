@@ -8424,11 +8424,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\souza\\OneDrive\\Área de Trabalho\\Recriar\\TrocaJusta\\TrocaJusta.csproj",
+      "projectUniqueName": "C:\\Users\\souza\\OneDrive\\Área de Trabalho\\TrocaJusta\\TrocaJusta.csproj",
       "projectName": "TrocaJusta",
-      "projectPath": "C:\\Users\\souza\\OneDrive\\Área de Trabalho\\Recriar\\TrocaJusta\\TrocaJusta.csproj",
+      "projectPath": "C:\\Users\\souza\\OneDrive\\Área de Trabalho\\TrocaJusta\\TrocaJusta.csproj",
       "packagesPath": "C:\\Users\\souza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\souza\\OneDrive\\Área de Trabalho\\Recriar\\TrocaJusta\\obj\\",
+      "outputPath": "C:\\Users\\souza\\OneDrive\\Área de Trabalho\\TrocaJusta\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\souza\\AppData\\Roaming\\NuGet\\NuGet.Config"

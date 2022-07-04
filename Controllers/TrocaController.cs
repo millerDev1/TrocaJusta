@@ -64,7 +64,7 @@ namespace TrocaJusta.Controllers
                 _context.Add(troca);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-                ViewData["UsuarioId"] = new SelectList(_context.Usuario, "UsuaurioId", "Nome");
+                //ViewData["UsuarioId"] = new SelectList(_context.Usuario, "UsuaurioId", "Nome");
                 ViewData["ProfissaoEnum"] = new SelectList(_context.Usuario, "ProfissaoEnum", "Profissao");
                 ViewData["ServicoEnum"] = new SelectList(_context.Usuario, "ServicoEnum", "Servico");
             }
